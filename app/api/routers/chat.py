@@ -7,6 +7,7 @@ from app.db import schemas
 from app.db.database import get_db
 from app.core.security import get_current_user, auth_header
 from app.llm_client import send_prompt
+from app.prompt_builder import build_prompt
 from anyio import to_thread
 
 router = APIRouter()
